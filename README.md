@@ -42,12 +42,16 @@ installing starship (powerline go alternative)
   - sh -c "$(curl -fsSL https://starship.rs/install.sh)"
 
 add to .bashrc:
+
 [git_status]
+
 disabled=true
   - eval "$(starship init bash)"
   
 or .zshrc
+
 [git_status]
+
 disabled=true
   - eval "$(starship init zsh)"
 
