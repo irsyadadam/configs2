@@ -50,3 +50,6 @@ or .zshrc
 [git_status]
 disabled=true
   - eval "$(starship init zsh)"
+
+
+NOTE: ADD starship.toml IN ~/.conf DIRECTORY
