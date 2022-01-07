@@ -1,6 +1,5 @@
 TODO:
 - tmux
-- bashrc startup ascii
 - coc
 - install node
 ------------------------------------------------------
