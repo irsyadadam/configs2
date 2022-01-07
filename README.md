@@ -1,4 +1,8 @@
 For fzf.vim to work, need vim 8.2
+  - sudo add-apt-repository ppa:jonathonf/vim
+  - sudo apt update
+  - sudo apt install vim
+  - vim --version
 
 Also need a font that is compatible with devicons and powerline (ex Cascadia Nerd Font)
   - Cascadia Nerd Font Vim/NERDTREE comaptible:
