@@ -3,16 +3,17 @@ TODO:
 - bashrc startup ascii
 - coc
 - install node
-
+------------------------------------------------------
 For fzf.vim to work, need vim 8.2
   - sudo add-apt-repository ppa:jonathonf/vim
   - sudo apt update
   - sudo apt install vim
   - vim --version
-
+----------------------------------------------------------
 Also need a font that is compatible with devicons and powerline (ex Cascadia Nerd Font)
   - Cascadia Nerd Font Vim/NERDTREE comaptible:
     - https://github.com/AaronFriel/nerd-fonts/releases/tag/v1.2.0
+-------------------------------------------------------------------------
 
 Installing Powerline go for shell:
   - git config --global http.sslverify false
@@ -64,4 +65,7 @@ NOTE: ADD starship.toml IN ~/.conf DIRECTORY
 Peco:
 
 - sudo apt install peco
-- 
+
+------------------------------------------
+Install Neofetch
+  - https://github.com/dylanaraps/neofetch/wiki/Installation#universal-install
