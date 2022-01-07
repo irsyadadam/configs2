@@ -53,3 +53,11 @@ disabled=true
 
 
 NOTE: ADD starship.toml IN ~/.conf DIRECTORY
+
+
+
+-----------------------------------------
+Peco:
+
+- sudo apt install peco
+- 
