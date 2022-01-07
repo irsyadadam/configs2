@@ -1,3 +1,9 @@
+TODO:
+- tmux
+- bashrc startup ascii
+- coc
+- install node
+
 For fzf.vim to work, need vim 8.2
   - sudo add-apt-repository ppa:jonathonf/vim
   - sudo apt update
