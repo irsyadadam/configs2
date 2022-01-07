@@ -73,4 +73,4 @@ Install Neofetch
 Installing Node/NVM:
   - sudo apt-get install nodejs -f
   - curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-  - put in bash rc: source ~/.nvm/.nvm.sh
+  - put in bash rc: source ~/.nvm/nvm.sh
