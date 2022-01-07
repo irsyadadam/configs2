@@ -15,8 +15,8 @@ set wildmode=longest:full,full
 set nowrap
 set list
 set listchars=tab:▸\ ,trail:·
-set mouse=a
-set scrolloff=8
+set mouse        =a
+set scrolloff    =8
 set sidescrolloff=8
 set nojoinspaces
 set splitright
@@ -77,6 +77,43 @@ Plug 'tpope/vim-fugitive' | Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'stsewd/fzf-checkout.vim'
+
+" opens files at last edit position
+Plug 'farmergreg/vim-lastplace'
+
+" aligns spaces for you
+"   ex) 
+"       hello = 123231
+"       hi = asd
+"   turns into 
+"       hello = 123123
+"       hi    = 123123
+"   using glip=
+" use gl to align
+Plug 'tommcdo/vim-lion'
+
+" opens up a markdown preview window in either chrome or safari using
+" :MarkdownPreview
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+"NERDTREEEE
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+"reindents it when pasting
+Plug 'sickill/vim-pasta'
+
+"peekaboo screen (by pressing @ or " in normal, or C-r in insert mode)
+Plug 'junegunn/vim-peekaboo'
+
+"language packs for c++, etc..
+Plug 'sheerun/vim-polyglot'
+
+" underlines first occurance of word
+Plug 'unblevable/quick-scope'
+
 call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -124,3 +161,36 @@ nmap <leader>r :Rg<cr>
 nmap <leader>R :Rg<space>
 nmap <leader>gb :GBranches<cr>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"configs for vim-lion (line 93)
+let g:lion_squeeze_spaces = 1 " Remove as many spaces as possible when aligning
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" configs for nerdtree line 100
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI=1
+
+let g:NERDTreeDirArrowExpandable = '▹'
+let g:NERDTreeDirArrowCollapsible = '▿'
+
+let g:plug_window = 'noautocmd vertical topleft new'
+
+"devicons
+let g:WebDevIconsUnicodeDecorateFolderNodes = 1
+let g:DevIconsEnableFoldersOpenClose = 1
+let g:DevIconsEnableFolderExtensionPatternMatching = 1
+
+" \ + n opens and closes nerdtree
+nnoremap <expr> <leader>n g:NERDTree.IsOpen() ? ':NERDTreeClose<CR>' : @% == '' ? ':NERDTree<CR>' : ':NERDTreeFind<CR>'
+nmap <leader>N :NERDTreeFind<CR>
+
+" If more than one window and previous buffer was NERDTree, go back to it.
+autocmd BufEnter * if bufname('#') =~# "^NERD_tree_" && winnr('$') > 1 | b# | endif
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" configs for pasta (line 106)
+let g:pasta_disabled_filetypes = ['fugitive']
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" congifs for polygot (lines 112)
+let g:vim_markdown_new_list_item_indent = 0
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" configs for quickscope (line 115)
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+let g:qs_max_chars=150
