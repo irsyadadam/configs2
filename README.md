@@ -12,7 +12,9 @@ Installing Powerline go for shell:
   - git config --global http.sslverify false
   - sudo apt install golang-go
   - go get -u github.com/justjanne/powerline-go
-  - in .bashrc:
+
+in .bashrc:
+
 GOPATH=$HOME/go
 function _update_ps1() {
     PS1="$($GOPATH/bin/powerline-go -error $?)"
