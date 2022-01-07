@@ -34,3 +34,15 @@ if [ "$TERM" != "linux" ] && [ -f "$GOPATH/bin/powerline-go" ]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
     
 fi
+
+
+
+---------------------------------
+installing starship (powerline go alternative)
+  - sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+add to .bashrc:
+  - eval "$(starship init bash)"
+  
+or .zshrc
+  - eval "$(starship init zsh)"
