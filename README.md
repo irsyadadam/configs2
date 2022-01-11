@@ -78,3 +78,5 @@ Installing Node/NVM:
 
 Install lsd: https://reposhub.com/rust/system-tools/Peltoche-lsd.html
   - sudo dpkg -i lsd_7.2.0_amd64.deb  # adapt version number and architecture
+
+map ls to lsd in .bashrc
