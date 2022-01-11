@@ -76,6 +76,5 @@ Installing Node/NVM:
 
 ---------------------------------------------------------------------
 
-Install https://github.com/sebastiencs/icons-in-terminal
-  - first run this line:
-    - sudo apt install fontconfig
+Install lsd: https://reposhub.com/rust/system-tools/Peltoche-lsd.html
+  - sudo dpkg -i lsd_7.2.0_amd64.deb  # adapt version number and architecture
