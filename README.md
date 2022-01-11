@@ -64,6 +64,9 @@ Peco:
 
 - sudo apt install peco
 
+read from the following to implement functions: 
+ - https://github.com/craftzdog/dotfiles-public/blob/master/.config/fish/functions/peco_select_history.fish
+
 ------------------------------------------
 Install Neofetch
   - https://github.com/dylanaraps/neofetch/wiki/Installation#universal-install
